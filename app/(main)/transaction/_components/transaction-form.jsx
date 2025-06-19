@@ -310,12 +310,12 @@ export function AddTransactionForm({
         <Button
           type="button"
           variant="outline"
-          className="w-full"
+          className=""
           onClick={() => router.back()}
         >
           Cancel
         </Button>
-        <Button type="submit" className="w-full" disabled={transactionLoading}>
+        <Button type="submit" className="bg-[#057dcd] text-white" disabled={transactionLoading}>
           {transactionLoading ? (
             <>
               <Loader2 className="mr-2 h-4 w-4 animate-spin" />
